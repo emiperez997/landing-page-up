@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      color: white;
+    }
+
+    main {
+      color: black;
+    }
+
+    .p-2 {
+      padding: 2rem;
+    }
+
+    .h-80 {
+      height: 100px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="blue accent-2">
+        <div class="nav-wrapper container">
+          <img src="./img/logo.svg" alt="" height="100%" class="brand-logo" />
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Home</a></li>
+            <li><a href="badges.html">Products</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <img
+          src="./img/logo.svg"
+          alt=""
+          height="60px"
+          width="100%"
+          class="brand-logo"
+        />
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Products</a></li>
+      </ul>
+    </header>
+
+    <section class="blue lighten-1 center p-2">
+      <h2>Lorem ipsum dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nobis
+      </p>
+
+      <button class="waves-effect waves-light btn blue accent-2">Action</button>
+    </section>
+
+    <main>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card center h-80">
+            <i class="material-icons">flash_on</i>
+            <h6>Speeds up development</h6>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card center h-80">
+            <i class="material-icons">group</i>
+            <h6>User Experience Focused</h6>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card center h-80">
+            <i class="material-icons">settings</i>
+            <h6>Easy to work with</h6>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer blue accent-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">
+              You can use rows and columns here to organize your footer content.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
